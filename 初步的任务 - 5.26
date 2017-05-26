@@ -1,0 +1,29 @@
+初步的任务 - 5.26
+
+newton 邓楚凡
+region范围内左右运动，不受重力影响 trigger（球碰到newton之后hp--, when hp<=0, Destroy newton）
+命名：NewtonScript
+
+ball 黄世豪
+ball随着重量下坠,可以规定初速度和方向, 有rebounce, trigger 碰到newton之后，Destroy ball
+命名：BallScript
+
+start 按键 赵童
+按下之后，游戏开始运行， 改变球的物理属性（有重力 - 无重力）
+命名StartScript
+
+屏幕划线，形成刚体 汤圣杰
+
+star 张凯
+球经过star， 不发生碰撞， star Trigger， score（public static int）上涨
+
+美工：继续搜集素材
+星星，包括星星闪烁。
+牛顿， 包括哭的牛顿
+水果，
+Start button
+score数字的样式
+划线的样式
+开始界面，背景
+
+
