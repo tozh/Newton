@@ -13,3 +13,9 @@ http://blog.csdn.net/akof1314/article/details/23261651
 
 123test
 代码是Unity4的，有些改动，具体代码请参考文件夹 [2D射击游戏]-[Script]
+
+# Tutorial on how to draw lines
+https://www.youtube.com/watch?v=dmBQQ2XtuhU
+
+# Tutorial on animation
+https://unity3d.com/learn/tutorials/projects/2d-roguelike-tutorial
