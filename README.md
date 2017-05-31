@@ -11,4 +11,5 @@ http://blog.csdn.net/kingmax54212008/article/details/49623001
 http://blog.csdn.net/akof1314/article/details/23260737
 http://blog.csdn.net/akof1314/article/details/23261651
 
+123test
 代码是Unity4的，有些改动，具体代码请参考文件夹 [2D射击游戏]-[Script]
