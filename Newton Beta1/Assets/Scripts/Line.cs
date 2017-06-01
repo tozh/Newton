@@ -6,20 +6,28 @@ public class Line : MonoBehaviour {
 
 	public LineRenderer lineRenderer;
 	public EdgeCollider2D edgeCol;
+	public float lengthOfLine;
 
 	List<Vector2> points;
 
+
 	public void UpdateLine (Vector2 mousePos)
 	{
-		if (points == null)
-		{
-			points = new List<Vector2>();
-			SetPoint(mousePos);
-			return;
+		if (lengthOfLine < 10) {
+			if (points == null)
+			{
+				points = new List<Vector2>();
+				SetPoint(mousePos);
+				return;
+			}
+
+			if (Vector2.Distance (points.Last (), mousePos) > .1f) {
+				lengthOfLine += Vector2.Distance (points.Last (), mousePos);
+				SetPoint(mousePos);
+			}
 		}
 
-		if (Vector2.Distance(points.Last(), mousePos) > .1f)
-			SetPoint(mousePos);
+				
 	}
 
 	void SetPoint (Vector2 point)
