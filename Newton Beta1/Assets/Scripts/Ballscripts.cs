@@ -20,7 +20,7 @@ public class Ballscripts : MonoBehaviour {
 		
 		// Apply movement to the rigidbody
 		rbody2D = GetComponent<Rigidbody2D> ();
-
+		rbody2D.bodyType = RigidbodyType2D.Static;
 
 	}
 
@@ -30,14 +30,11 @@ public class Ballscripts : MonoBehaviour {
 	public void Update() {
 		if (num > 0) {
 			rbody2D.velocity = movement;
+			rbody2D.bodyType = RigidbodyType2D.Dynamic;
 			num--;
 		}
 	}
-
-
-
-
-
+		
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "star") 
