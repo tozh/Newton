@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Destroyscripts.cs" />
      <Compile Include="Assets\Scripts\Hitscripts.cs" />
      <Compile Include="Assets\Scripts\Line.cs" />
+     <Compile Include="Assets\Scripts\Restart.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
