@@ -10,7 +10,7 @@ public class Hitscripts : MonoBehaviour {
 	IEnumerator Start()
 	{
 		var pointA = transform.position;
-		//Destroy (gameObject);
+
 		while(true)
 		{
 			yield return StartCoroutine(MoveObject(transform, pointA, pointB, 3.0f));
