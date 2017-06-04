@@ -2,45 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LineScript : MonoBehaviour {
+public class LineScript : MonoBehaviour
+{
 
-	public LineRenderer lineRenderer;
-	public EdgeCollider2D edgeCol;
-	public float MaxLen = 10000;
-	public float lineLen = 0;
-	List<Vector2> points;
-	void Start() {
-		lineRenderer = GetComponent<LineRenderer> ();
-		edgeCol = GetComponent<EdgeCollider2D> ();
-	}
-	void Update() {
-		lineRenderer.SetColors(Color.cyan,Color.cyan);
-	}
-	public void UpdateLine (Vector2 mousePos)
-	{
-		if (lineLen <= MaxLen) {
-			if (points == null) {
-				points = new List<Vector2>();
-				SetPoint(mousePos);
-				return;
-			}
+    public LineRenderer lineRenderer;
+    public EdgeCollider2D edgeCol;
+    public float lengthOfLine;
+    public float MAX_LENGTH = 6;
 
-			float dist = Vector2.Distance (points.Last (), mousePos);
-			if (dist > 0.001f) {
-				SetPoint(mousePos);
-				lineLen += dist;
-			}
-		}
-	}
+    List<Vector2> points;
 
-	void SetPoint (Vector2 point) {
-		points.Add(point);
-		lineRenderer.positionCount = points.Count;
-		lineRenderer.SetPosition(points.Count - 1, point);
-		if (points.Count > 1) {
-			edgeCol.points = points.ToArray ();
-		}
-	}
+
+    public void UpdateLine(Vector2 mousePos)
+    {
+        // first point of a line
+        if (points == null)
+        {
+            points = new List<Vector2>();
+            SetPoint(mousePos);
+            return;
+        }
+
+        float distance = Vector2.Distance(points.Last(), mousePos);
+        if (distance > .1f)
+        {
+            Vector2 point = mousePos;
+            // forbid the line longer than MAX_LENGTH
+            if (distance + lengthOfLine > MAX_LENGTH)
+            {
+                Vector2 lastPoint = points[points.Count - 1];
+                point = lastPoint + (mousePos - lastPoint) * ((MAX_LENGTH - lengthOfLine) / distance);
+            }
+            // draw other point
+            if (lengthOfLine < MAX_LENGTH)
+            {
+                lengthOfLine += Vector2.Distance(points.Last(), mousePos);
+                print(lengthOfLine);
+                SetPoint(point);
+            }
+        }
+    }
+    // draw a single point
+    void SetPoint(Vector2 point)
+    {
+        points.Add(point);
+
+        lineRenderer.positionCount = points.Count;
+        lineRenderer.SetPosition(points.Count - 1, point);
+
+        if (points.Count > 1)
+            edgeCol.points = points.ToArray();
+    }
 
 }
-

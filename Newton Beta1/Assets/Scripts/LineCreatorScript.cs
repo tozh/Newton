@@ -44,9 +44,11 @@ public class LineCreatorScript : MonoBehaviour {
 				activeLine.UpdateLine (mousePos);
 				activeDrag.UpdateDrag (mousePos);
 			}
-			if (activeDrag != null) {
-				Destroy(activeDrag.gameObject, 2);
-			}
+		}
+	}
+	public void destoryDrag() {
+		if (activeDrag != null) {
+			Destroy(activeDrag.gameObject);
 		}
 	}
 }
