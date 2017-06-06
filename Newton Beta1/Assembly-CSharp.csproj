@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\LineCreatorScript.cs" />
      <Compile Include="Assets\Scripts\LineScript.cs" />
      <Compile Include="Assets\Scripts\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\QuitScript.cs" />
      <Compile Include="Assets\Scripts\RestartScript.cs" />
      <Compile Include="Assets\Textures\Particle Ribbon\Scripts\ReverseNormals.cs" />
      <None Include="Assets\Textures\Particle Ribbon\readme_Simple_Particle_Ribbon.txt" />
