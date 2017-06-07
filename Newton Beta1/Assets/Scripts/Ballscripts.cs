@@ -14,7 +14,7 @@ public class Ballscripts : MonoBehaviour {
     public GameObject star2;
     public GameObject star3;
 
-    private int count = 0;
+    public int count = 0;
     private Vector2 movement;
 
 
@@ -71,5 +71,11 @@ public class Ballscripts : MonoBehaviour {
             }
         }
 	}
+
+	/*public int showstar()
+	{
+		return count;
+	}
+	*/
 		
 }

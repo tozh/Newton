@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Hitscripts : MonoBehaviour {
-	public int damage = 1;
+
+	public int damage = 1;//damage == Newton's HP;
 	public Vector3 pointB;
 	public bool isNewtonHit = false;
 
