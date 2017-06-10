@@ -1,0 +1,24 @@
+DDL 6.10
+
+Light workload this time.
+
+For all:
+  想出3-5个关于游戏道具的点子。(苹果吃到的道具以及游戏本身的障碍），核心思想是： 玩家要做的仅仅只是划线，但却能通过新颖的情景让玩家addictive。
+
+Mr. Huang:
+  将图片缩小，重新布局，明天大家看下效果
+  
+Mr. Zhang:
+  和赵童处理下得分数据的借口问题
+  
+Mr. Zhao:
+  处理level select数据与各借口
+  
+Mr. Deng:
+  两边加上墙，大致调试下合理系数，两侧墙和划线以及游戏固有的墙，让游戏自然些。（苹果本身是没有bouncy的， 反弹都依赖其他物品的bouncy系数）
+
+Mr. Tang:
+  苹果落地后反弹延时后消失，再延时后pop up失败window
+  
+Miss. Zhu:
+  Hurry up.
