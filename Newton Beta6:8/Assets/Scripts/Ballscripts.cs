@@ -49,10 +49,10 @@ public class Ballscripts : MonoBehaviour {
 			rbody2D.bodyType = RigidbodyType2D.Dynamic;
 			num--;
 		}
-		if (ball_position.position.y < -6 || ball_position.position.x < -10 || ball_position.position.y > 10) {
-			Destroy (gameObject);
-			Failure_pop_up.gameObject.SetActive (true);
-		}
+//		if (ball_position.position.y < -6 || ball_position.position.x < -10 || ball_position.position.y > 10) {
+//			Destroy (gameObject);
+//			Failure_pop_up.gameObject.SetActive (true);
+//		}
 	}
 		
 	void OnTriggerEnter2D(Collider2D other)
