@@ -15,6 +15,7 @@ public class Ballscripts : MonoBehaviour {
 	public Rigidbody2D rigidball;
 	public GameObject ButtonPanel;//
 	public Transform crow_position;//
+	public Transform snow_position;
 
 	public Vector2 speed = new Vector2(5, 5);
 
@@ -59,6 +60,15 @@ public class Ballscripts : MonoBehaviour {
 		}
 		if (Math.Abs (ball_position.position.y - crow_position.position.y) <= 2 && Math.Abs (ball_position.position.x - crow_position.position.x) <= 2) {
 			ball_position.position = crow_position.position;
+		}
+		if (!fail && (snow_position.position.y - ball_position.position.y) <= 1 && Math.Abs(snow_position.position.x - ball_position.position.x) <= 1) {
+			Debug.Log ("aaaa");
+			fail = true;
+			Destroy (gameObject, 2);
+
+			ButtonPanel.gameObject.SetActive (false);//
+			Blackpanel2.gameObject.SetActive (true);//
+
 		}
 		if (!fail && ball_position.position.y < -10 && Math.Abs(rigidball.velocity.x) < 0.5 && Math.Abs(rigidball.velocity.y)== 0 || !fail && Math.Abs(ball_position.position.x)>7.5) {
 			fail = true;
