@@ -9,7 +9,7 @@ DDL: 6.27
 赵童：
   1.start menu设置音乐和游戏内设置的音乐并不同步
   2.游戏界面留3个按钮，开始，重来和菜单。菜单内含setting，选关和推到主界面。详见之前发个架构图。
-  3.字体。
+  3.start menu中游戏的字体。
 
 张凯：
   1. Exception: 无敌效果出现exception bug。碰到牛顿成功后，出现exception.
