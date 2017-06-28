@@ -1,2 +1,0 @@
-Line.cs : Contains the probility of friction and bounce.
-LineCreator: select a specific line(different friction/bounce) and display the line.
