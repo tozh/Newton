@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LineScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Level.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/LoadSceneOnClick.cs" Line="10" Column="3" />
+      <File FileName="Assets/Scripts/LineScript.cs" Line="56" Column="2" />
+      <File FileName="Assets/Scripts/LevelEntrance.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/Quit.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DragScript.cs" Line="7" Column="25" />
+      <File FileName="Assets/Scripts/LevelSystem.cs" Line="16" Column="42" />
+      <File FileName="Assets/Scripts/Ballscripts.cs" Line="51" Column="17" />
+      <File FileName="Assets/Scripts/RestartScript.cs" Line="6" Column="7" />
+      <File FileName="Assets/Scripts/QuitScript.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/NextLevel.cs" Line="16" Column="28" />
+      <File FileName="Assets/Scripts/PauseScript.cs" Line="13" Column="11" />
+      <File FileName="Assets/Scripts/Destroyscripts.cs" Line="66" Column="45" />
+      <File FileName="Assets/Scripts/Hitscripts.cs" Line="30" Column="31" />
+      <File FileName="Assets/Scripts/LineCreatorScript.cs" Line="79" Column="6" />
+      <File FileName="Assets/Scripts/ButtonDownScript.cs" Line="19" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
