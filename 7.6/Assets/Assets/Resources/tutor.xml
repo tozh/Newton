@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<levels>
+  <level id="1" name="level1" tutorial="1"/>
+  <level id="2" name="level2" tutorial="1"/>
+  <level id="3" name="level3" tutorial="1"/>
+  <level id="4" name="level4" tutorial="1"/>
+  <level id="5" name="level5" tutorial="1"/>
+  <level id="6" name="level6" tutorial="1"/>
+</levels>
